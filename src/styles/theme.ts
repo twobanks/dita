@@ -1,8 +1,8 @@
 export default {
   font: {
     family: {
-      roboto:
-        "Roboto, sans-serif, Arial",
+      roboto: "Urbanist, sans-serif, Arial",
+      caveat: "Caveat, cursive",
     },
     normal: 400,
     bold: 600,
@@ -24,14 +24,14 @@ export default {
     none: "transparent",
     primary: "#B4B4B4",
     secondary: "#737C84",
-    background: "#ecd8ef",
+    background: "#E8F5FF",
     shadow: "#333333",
     white: "#FFFFFF",
     divider: "#EBEBEB",
     blue: "#69A3FF",
     orange: "#FF9632",
     red: "#ED1946",
-    pink: '#d856f9',
-    lilac: '#d856f9',
+    pink: '#9C7BFF',
+    lilac: '#d177ff',
   },
 } as const

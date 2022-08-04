@@ -7,9 +7,6 @@ const Header = () => (
     <S.DitaWrapper>
       <Image src={dita} layout="fill" alt="Dita Ateliê" />
     </S.DitaWrapper>
-    <S.Info>
-      <h2>Dita Ateliê</h2>
-    </S.Info>
   </S.Header>
 )
 

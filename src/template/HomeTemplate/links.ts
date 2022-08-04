@@ -9,24 +9,24 @@ export const social: Social[] = [
   {
     id: uuid(),
     name: 'Facebook',
-    url: '#',
+    url: 'https://www.facebook.com/wandinha.chinelos',
     image: facebook,
   },
   {
     id: uuid(),
     name: 'Instagram',
-    url: '#',
+    url: 'https://www.instagram.com/dita.chinelos/',
     image: instagram,
   },
   {
     id: uuid(),
     name: 'Whatsapp',
-    url: '#',
+    url: 'wa.me/5534988927023',
     image: whatsapp,
   },
   {
     id: uuid(),
-    name: 'Tik-Tok',
+    name: 'Chinelos Customizados',
     url: '#',
     image: tiktok,
   }

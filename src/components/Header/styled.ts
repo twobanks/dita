@@ -1,49 +1,31 @@
 import styled, { css } from "styled-components";
 import media from 'styled-media-query'
 
-export const Header = styled.header`
-  ${({ theme }) => css`
-    position: relative;
-    display: flex;
-    gap: 2rem;
-    padding: 2rem;
-    border-radius: ${theme.radius};
-    background-color: ${theme.colors.white};
-    border: 2px dashed ${theme.colors.shadow};
-    &:after {
-      content: "";
-      display: block;
-      position: absolute;
-      z-index: -1;
-      width: 95%;
-      height: 100%;
-      bottom: -1rem;
-      left: calc(50% - 47.5%);
-      border-radius: ${theme.radius};
-      border: .2rem solid ${theme.colors.shadow};
-      background-color: #fff1a9;
-    }
-    ${media.lessThan('medium')`
-      margin-top: 6rem;
-      flex-direction: column;
-      align-items: center;
-    `}
-  `}
-`
+export const Header = styled.header``
 
 export const DitaWrapper = styled.div`
   ${({ theme }) => css`
-    display: flex;
-    position: relative;
-    height: 13rem;
-    width: 13rem;
-    border-radius: 100%;
-    overflow: hidden;
-    border: 2px solid ${theme.colors.shadow};
-    ${media.lessThan('medium')`
-      margin-top: -8rem;
-    `}
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  height: 6rem;
+  padding: 0;
+  border-radius: ${theme.radius};
+  overflow: hidden;
+  border: .3rem solid ${theme.colors.white};
+  box-shadow: 0 .8rem 1rem -.4rem rgba(${theme.colors.shadow}, 0.2);
+  transform-origin: center center;
+  transition: 0.15s ease;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    transform: translateY(-0.4rem);
+    box-shadow: 0 1.2rem 1.4rem -.4rem rgba(${theme.colors.shadow}, 0.3);
+  }
   `}
+  
 `
 
 export const Info = styled.div`
