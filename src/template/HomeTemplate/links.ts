@@ -1,6 +1,6 @@
 import { v4 as uuid } from 'uuid';
 import { Social } from '../../types/dita';
-const facebook = '/icon/facebook.svg';
+const kwai = '/icon/kwai.png';
 const instagram = '/icon/instagram.svg';
 const whatsapp = '/icon/whatsapp.svg';
 const tiktok = '/icon/tiktok.svg';
@@ -8,26 +8,26 @@ const tiktok = '/icon/tiktok.svg';
 export const social: Social[] = [
   {
     id: uuid(),
-    name: 'Facebook',
-    url: 'https://www.facebook.com/wandinha.chinelos',
-    image: facebook,
+    name: 'Veja meu catálogo',
+    url: 'https://wa.me/c/553488927023',
+    image: tiktok,
   },
   {
     id: uuid(),
-    name: 'Instagram',
+    name: 'Fale comigo',
+    url: 'https://wa.me/5534988927023',
+    image: whatsapp,
+  },
+  {
+    id: uuid(),
+    name: 'blog (EM BREVE!!!)',
     url: 'https://www.instagram.com/dita.chinelos/',
     image: instagram,
   },
   {
     id: uuid(),
-    name: 'Whatsapp',
-    url: 'wa.me/5534988927023',
-    image: whatsapp,
+    name: 'blog (EM BREVE!!!)',
+    url: 'https://www.instagram.com/dita.chinelos/',
+    image: kwai,
   },
-  {
-    id: uuid(),
-    name: 'Chinelos Customizados',
-    url: '#',
-    image: tiktok,
-  }
 ]

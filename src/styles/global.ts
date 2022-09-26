@@ -45,7 +45,8 @@ const GlobalStyles = createGlobalStyle`
       font-style: normal;
     }
     body {
-      background-color: ${theme.colors.background};
+      /* background-color: ${theme.colors.background}; */
+      background-color: #EBEEF1;
       font-size: ${theme.font.sizes.s16};
       color: ${theme.colors.secondary};
       font-weight: ${theme.font.normal};
