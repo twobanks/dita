@@ -5,7 +5,7 @@ import { Social } from '../../types/dita';
 const SocialMedia = ({ social }: { social: Social[] }) => (
   <S.Wrapper>
     {social.map(item => (
-      <S.Item key={item.id} href={item.url} target="_blank">
+      <S.Item key={item.id} href={item.url} target="_blank" status={item.status}>
         <strong>{item.name}</strong>
       </S.Item>
     ))}

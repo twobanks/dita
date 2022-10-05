@@ -1,5 +1,9 @@
-import styled, { css } from 'styled-components'
+import styled, { css, DefaultTheme } from 'styled-components'
 import media from 'styled-media-query'
+
+type SocialMediaStyle = {
+  status: 'active' | 'disabled';
+}
 
 export const Wrapper = styled.ul`
   display: flex;
@@ -11,25 +15,42 @@ export const Wrapper = styled.ul`
   
 `
 
-export const Item = styled.a`
-  ${({ theme }) => css`
+const itemModifiers = {
+  ['active']: (theme: DefaultTheme) => css`
+    background-color: #d3c9e3;
+    color: #1a1a1e;
+    cursor: pointer;
+    &:hover {
+      background-color: #a578eb;
+      color: ${theme.colors.white};
+      font-weight: ${theme.font.bold};
+    }
+  `,
+  ['disabled']: (theme: DefaultTheme) => css`
+    background-color: ${theme.colors.none};
+    border: 2.5px dashed #d3c9e3;
+    color: ${theme.colors.shadow};
+    cursor: not-allowed;
+    &:hover {
+      background-color: transparent;
+      border: 2.5px dashed #d3c9e3;
+      color: ${theme.colors.shadow};
+    }
+  `
+}
+
+export const Item = styled.a<SocialMediaStyle>`
+  ${({ theme, status }) => css`
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
     border-radius: 1rem;
     padding: 2rem 0;
-    background-color: #d3c9e3;
     width: 60%;
-    color: #1a1a1e;
-    cursor: pointer;
     font-size: 1.6rem;
     box-shadow: 0 0 1.5rem 0 rgba(0,0,0,0.1);
-    &:hover {
-      background-color: #a578eb;
-      color: ${theme.colors.white};
-      font-weight: ${theme.font.bold};
-    }
+    ${itemModifiers[status](theme)}
     ${media.lessThan('medium')`
       width: 100%;
     `}

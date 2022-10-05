@@ -1,9 +1,10 @@
 import * as S from './styled'
 import { v4 as uuid } from 'uuid';
-import Lottie from "lottie-react";
 const badge = '/icon/badge.svg'
 const dita = '/img/dita.jpg'
-import { social } from '../../template/HomeTemplate/links'
+import { items } from '../../template/HomeTemplate/links'
+import Link from 'next/link';
+import Image from 'next/image';
 
 const Header = () => (
   <S.Header>
@@ -11,7 +12,7 @@ const Header = () => (
     <S.Content>
       <h2>
         @dita.chinelos
-        <img src={badge} alt="Ícone verificado" />
+        <Image src={badge} alt="Ícone verificado" height={30} width={30} />
       </h2>
       <strong>Chinelos Customizados</strong>
       <p>
@@ -22,10 +23,13 @@ const Header = () => (
       </p>
     </S.Content>
     <ul>
-      {social.map(item => (
+      {items.map(item => (
         <li key={uuid()}>
-          {/* <Lottie animationData={item.image}  /> */}
-          <img src={item.image} alt="" />
+          <Link href={item.url}>
+            <a target="_blank" rel='noopener noreferrer'>
+              <Image src={item?.image} alt={item.name} height={28} width={30} />
+            </a>
+          </Link>
         </li>
       ))}
     </ul>

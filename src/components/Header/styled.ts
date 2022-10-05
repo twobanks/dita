@@ -57,7 +57,7 @@ export const Content = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #333333;
+    color: ${theme.colors.shadow};
     h2 {
       display: flex;
       align-items: center;
@@ -73,6 +73,5 @@ export const Content = styled.div`
     p, strong {
       line-height: 22px;
     }
-    
   `}
 `
