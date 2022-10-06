@@ -1,5 +1,5 @@
 import * as S from './styled'
-import { Header, SocialMedia } from '../../components'
+import { Card, Header, SocialMedia } from '../../components'
 import { social } from './links'
 
 const HomeTemplate = () => (
@@ -7,6 +7,7 @@ const HomeTemplate = () => (
     <S.Bar />
     <S.Wrapper>
       <Header />
+      <Card />
       <SocialMedia social={social} />
     </S.Wrapper>
   </>
