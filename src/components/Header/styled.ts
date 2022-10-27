@@ -65,6 +65,7 @@ export const Content = styled.div`
       gap: 10px;
       font-size: 30px;
       margin-bottom: 1rem;
+      color: #b446d7;
       img {
         height: 30px;
         width: 30px;

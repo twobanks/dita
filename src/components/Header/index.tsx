@@ -1,7 +1,7 @@
 import * as S from './styled'
 import { v4 as uuid } from 'uuid';
 const badge = '/icon/badge.svg'
-const dita = '/img/dita.jpg'
+const dita = '/img/dita.webp';
 import { items } from '../../template/HomeTemplate/links'
 import Link from 'next/link';
 import Image from 'next/image';

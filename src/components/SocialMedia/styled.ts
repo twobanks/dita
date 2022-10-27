@@ -17,24 +17,24 @@ export const Wrapper = styled.ul`
 
 const itemModifiers = {
   ['active']: (theme: DefaultTheme) => css`
-    background-color: #a578eb;
+    background-color: #b446d7;
     color: ${theme.colors.white};
     cursor: pointer;
     &:hover {
-      background-color: #a578eb;
+      background-color: #b446d7;
       color: ${theme.colors.white};
       font-weight: ${theme.font.bold};
     }
   `,
   ['disabled']: (theme: DefaultTheme) => css`
     background-color: ${theme.colors.none};
-    border: 2.5px dashed #a578eb;
-    color: #a578eb;
+    border: 2.5px dashed #b446d7;
+    color: #b446d7;
     cursor: not-allowed;
     &:hover {
       background-color: transparent;
-      border: 2.5px dashed #a578eb;
-      color: #a578eb;
+      border: 2.5px dashed #b446d7;
+      color: #b446d7;
     }
   `
 }

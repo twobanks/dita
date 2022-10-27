@@ -7,11 +7,9 @@ import theme from '../styles/theme'
 const MyApp = ({ Component, pageProps }: AppProps) => (
   <>
     <Head>
-      <title>Dita Ateliê</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta name="description" content="Dita Ateliê" />
-      <meta property="og:locale" content="pt_BR"/>
-      <meta property="og:type" content="website"/>
+      <link rel="shortcut icon" href="/icon/favicon.png" />
+      <link rel="apple-touch-icon" href="/icon/favicon.png" />
     </Head>
     <ThemeProvider theme={theme}>
       <GlobalStyles />

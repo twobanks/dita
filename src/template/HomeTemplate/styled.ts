@@ -26,6 +26,6 @@ export const Bar = styled.div`
   width: 100%;
   top: 0;
   left: 0;
-  background-color: #a7f;
+  background-color: #b446d7;
   box-shadow: 0 0 1.5rem 0 rgba(0,0,0,0.1);
 `
