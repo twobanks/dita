@@ -1,5 +1,4 @@
 import * as S from './styled'
-import Lottie from "lottie-react";
 import { Social } from '../../types/dita';
 
 const SocialMedia = ({ social }: { social: Social[] }) => (

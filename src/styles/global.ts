@@ -46,7 +46,7 @@ const GlobalStyles = createGlobalStyle`
     }
     body {
       /* background-color: ${theme.colors.background}; */
-      background-color: #EBEEF1;
+      background-color: #ffee4d;
       font-size: ${theme.font.sizes.s16};
       color: ${theme.colors.secondary};
       font-weight: ${theme.font.normal};
