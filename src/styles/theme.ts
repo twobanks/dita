@@ -1,8 +1,7 @@
 export default {
   font: {
     family: {
-      roboto: "Urbanist, sans-serif, Arial",
-      caveat: "Caveat, cursive",
+      urbanist: "Urbanist, sans-serif, Arial",
     },
     normal: 400,
     bold: 600,
@@ -27,11 +26,6 @@ export default {
     background: "#E8F5FF",
     shadow: "#333333",
     white: "#FFFFFF",
-    divider: "#EBEBEB",
-    blue: "#69A3FF",
-    orange: "#FF9632",
     red: "#ED1946",
-    pink: '#9C7BFF',
-    lilac: '#d177ff',
   },
 } as const

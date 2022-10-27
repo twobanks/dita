@@ -50,7 +50,7 @@ const GlobalStyles = createGlobalStyle`
       font-size: ${theme.font.sizes.s16};
       color: ${theme.colors.secondary};
       font-weight: ${theme.font.normal};
-      font-family: ${theme.font.family.roboto};
+      font-family: ${theme.font.family.urbanist};
       font-style: normal;
       font-display: swap;
       overflow-x: hidden;
